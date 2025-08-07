@@ -1,0 +1,214 @@
+@charset "utf-8";
+/* CSS Document */
+
+ @font-face {
+        
+	font-family:'Roboto';
+	src: url('Fonts/Roboto/Roboto.eot'); 
+	src: local('Roboto'), url('Fonts/Roboto/Roboto-Italic-VariableFont_wdth\,wght.ttf') format('truetype') ;
+   
+    }
+
+
+	.container {
+
+		width: 900px;
+		margin: 0 auto;
+
+	}
+
+    body {
+
+        font-family: 'Roboto', serif;
+		background-image: url("images/2colback.jpg");
+
+    }
+
+	header {
+
+		background-color: #CBD847;
+		border: 900px thin #CBD847;
+		height: 250px;
+		justify-content: center;
+
+	}
+
+	nav {
+
+		width: 100%;
+		text-align: center;
+		padding-top: 0 10px;
+		margin-top: 10px;
+		justify-content: center;
+		color: #DB8B48;
+
+	}
+
+	nav a {
+		
+		display: inline-block;
+		background-color: #34688D;
+		color: #DB8B48;
+
+	}
+
+	nav a:hover {
+
+		background-color: #10324C;
+
+	}
+
+	section {
+	
+		width: 900px;
+		background-image: url("images/2colback.jpg");
+		background-repeat: repeat-y;
+
+	}
+
+	article {
+
+		width: 800px;
+		border: 10px solid #094874;
+		margin: 10px;
+		color: #CBD847;
+
+	}
+
+	footer {
+
+		width: 900px;
+		height: 100px;
+		background-color: #10324C;
+		color: #CBD847;
+
+		width: fit-content;
+		margin: 0 auto;
+		text-align: center;
+
+	}
+
+	.tribute {
+
+		border: 10px solid #094874;
+		background-color: #34688D;
+
+	}
+
+	.tributeImage {
+
+		display: block;
+		width: fit-content;
+		margin: 0 auto;
+		text-align: center;
+		background-color: #34688D;
+		border: 10px solid #094874;
+		background-color: #34688D;
+
+	}
+
+	.paragraph1 {
+
+		background-color: #34688D;
+		border: 10px solid #094874;
+
+	}
+
+	.ImageSwap {
+
+		display: block;
+		width: fit-content;
+		margin: 0 auto;
+		text-align: center;
+		background-color: #34688D;
+		padding: 20px;
+		border: 10px solid #094874;
+
+	}
+
+
+	.logo {
+
+		float: left;
+		margin: 10px;
+
+	}
+
+	.banner {
+
+		float: center;
+		margin: 10px;
+
+	}
+
+    p {
+
+        text-align: center;
+        padding: 50px;
+
+    }
+
+    h1 {
+
+        text-align: center;
+        background-color: #34688D;
+        padding: 35px;
+
+    }
+
+    h2 {
+
+        text-align: center;
+
+    }
+
+    h3 {
+
+        text-align: center;
+
+    }
+
+    ul {
+
+        text-align: center;
+        list-style-type: none;
+
+    }
+
+    blockquote {
+
+        text-align: center;
+        padding: 30px;
+
+    }
+
+    a:link {
+
+        color: #DB8B48;
+
+    }
+
+
+
+
+    .thumbnailleft {
+
+        float: left;
+        padding-left: 10px;
+
+    }
+
+    .thumbnailright {
+
+        float: right;
+        padding-right: 10px;
+
+    }
+
+    .rtt {
+
+        text-align: center;
+        padding-top: 100px;
+        margin-top: 100px;
+    }
+

@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+	<link rel="stylesheet" href="mystyles.css">
+	<script type="text/javascript" src="myscripts.js"></script>
+</head>
+
+<body onload="preloadImages()">
+
+	<div class="container">
+		<header>
+			
+			<img id="logo" src="images/Logo-1.jpg" class="logo" alt="logo1">
+			<img src="images/Banner.png" class="banner" alt="banner">
+			
+			<nav>
+
+				<a href="Home.html">Home</a>
+
+				<a href="aboutus.html">About Us</a>
+
+				<a href="tributes.html">Tributes</a>
+
+				<a href="">Survey</a>
+
+				<a href="">Favorites</a>
+			
+			</nav>
+
+		</header>
+
+		<section>
+			
+			
+
+		</section>
+
+		
+
+		<article>
+			
+			<h1>
+				Extreme Honeymoons
+			</h1>
+			
+			<p class="paragraph1">
+							Welcome to Extreme Honeymoons!
+				If you are just getting hitched, we can help make your honeymoon outrageous.
+				Take a look at our Excursions and take the opportunity to complete our survey.
+
+			</p>
+			
+			<h2 class="ImageSwap">  Excursions </h2>
+
+			
+			<div class="ImageSwap">
+				<div id="thumbs">
+
+						<img src="images/Thumbnails/Image1Sm.jpg" alt="Hunting" onmouseover="swapImage(0);" />
+						<img src="images/Thumbnails/Image2Sm.jpg" alt="Hiking" onmouseover="swapImage(1);" />
+						<img src="images/Thumbnails/Image3Sm.jpg" alt="Skiing" onmouseover="swapImage(2);" />
+						<img src="images/Thumbnails/Image4Sm.jpg" alt="Scube Diving" onmouseover="swapImage(3);" />
+
+				</div>
+
+				<div id="mainImageContainer">
+					<img id="theImage" src="images/FullSize/Image1Lg.jpg" alt="Large view">
+					<div id="bottomText">Hunting</div>
+				</div>
+					<script language="JavaScript" type="text/javascript">
+
+						PrintButton1 = new Image
+						PrintButton2 = new Image
+						logo1 = new Image
+						logo2 = new Image
+					if (document.images) {
+						PrintButton1.src = "images/Thumbnails/Print1.gif"
+						PrintButton2.src = "images/Thumbnails/Print2.gif"
+						logo1.src = "images/Logo-1.jpg"
+						logo2.src = "images/Logo-2.jpg"
+					}
+
+
+							var imgArray = new Array(
+								'Image1Lg.jpg',
+								'Image2Lg.jpg',
+								'CoupleSnowBoardLg.jpg',
+								'Image4Lg.jpg'
+
+
+							);
+
+
+							var titleArray = new Array(
+								'Hunting',
+								'Hiking',
+								'Skiing',
+								'Scuba diving'
+
+							);
+
+							var imgPath = "images/FullSize/";
+
+							function swapImage(imgID) {
+
+								var theImage = document.getElementById('theImage');
+								var textDiv = document.getElementById('bottomText');
+
+								var newImg;
+								var textTitle;
+
+								newImg = imgArray[imgID];
+								theImage.src = imgPath + newImg;
+
+								textTitle=titleArray[imgID];
+
+									textDiv.innerHTML = textTitle;
+							}
+			
+
+							function preloadImages() {		
+								for(var i = 0; i < imgArray.length; i++) {
+									var tmpImg = new Image;
+									tmpImg.src = imgPath + imgArray[i];
+								}
+							}
+
+
+					</script>
+				</div>
+			
+				<h2 class="tribute">
+					just wanted to thank you folks at Extreme Honeymoons for a rip-roaring time during our honeymoon trip. I had always wanted to try heliskiing, and my honeymoon seemed as good a time to go for it.  Both my wife Mary and I are experienced downhill skiers, but we had never tried extreme skiing or snowboarding before. more...
+				</h2>
+			
+				<img src="images/FullSize/Image3Lg.jpg" class="tributeImage" alt="couple skiing">
+				
+				
+
+
+		</article>
+
+		<footer>
+				
+			<p> spencerloveswatermelon@gmail.com 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	This site has been created for solely educational purposes.</p>
+			
+			
+		</footer>
+	</div>
+
+	<script>
+		
+
+		
+		document.addEventListener('DOMContentLoaded', function () {
+			const logo = document.getElementById('logo')
+		});
+		
+		logo.addEventListener('mouseover', function() {
+			logo.src = 'images/Logo-2.jpg';
+		});
+			
+		logo.addEventListener('mouseout', function() {
+			logo.src = 'images/Logo-1.jpg';
+		});
+		
+	</script>
+</body>
+</html>
